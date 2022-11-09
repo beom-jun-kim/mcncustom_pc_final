@@ -1,0 +1,195 @@
+<!-- ========== header 돋보기 =========-->
+<div class="bottom-nav RMB RTB">
+    <ul class="bottom-nav__tabBar">
+        <li><button type="button" class="btnNav eNavFold"><i aria-hidden="true" class="icon icoNav"></i>네비게이션</button></li>
+        <li><button type="button" class="btnSearch eSearch"><!--@import(/svg/icon-search.html)-->검색</button></li>
+        <li><a href="/"><!--@import(/svg/icon-home.html)-->홈</a></li>
+        <li module="Layout_stateLogon"><a href="/order/basket.html"><!--@import(/svg/icon-cart.html)-->Cart <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+        <li module="Layout_stateLogoff"><a href="/order/basket.html"><!--@import(/svg/icon-cart.html)-->Cart <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+        <li><a href="/myshop/index.html"><!--@import(/svg/icon-user.html)-->마이쇼핑</a></li>
+    </ul>
+    <div class="bottom-nav__top">
+        <a href="#wrap" title="화면 최상단으로 이동하기"><i aria-hidden="true" class="icon icoArrowTop"></i><span>Top</span></a>
+    </div>
+</div>
+
+<div module="Layout_SearchHeader">
+    <!--@css(/css/module/layout/searchHeader.css)-->
+    <!--
+        $product_page=/product/detail.html
+        $category_page=/product/list.html
+    -->
+    <h3 class="title">Search</h3>
+    <fieldset>
+        <legend>검색</legend>
+        {$form.keyword}<input type="image" class="btnSearch" src="//img.echosting.cafe24.com/skin/skin/product/ico_search.svg" alt="검색" onclick="{$action_search_submit}" />
+    </fieldset>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+
+    <!-- <fieldset>
+        <legend>검색</legend>
+        {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">@import(/svg/icon-search.html)검색</button><ul class="autoDrop" id="{$search_auto_id}"></ul>
+    </fieldset> -->
+</div>
+            
+<div id="layoutDimmed" class="dimmed"></div>
+<!-- ========== header 돋보기 end =========-->
+
+
+<!-- =========== indexInfo =========== -->
+<section class="indexInfo">
+    <div class="index__info--wrap">
+        <ul class="index__info--box">
+            <li class="index__info--box-sub">
+                <div class="index__info--box-desc">
+                    <div class="index__info--box-desc-main">
+                        <h1># 매장안내</h1>
+                    </div>
+                    <div class="index__info--box-desc-detail">
+                        <p>
+                            &nbsp;대구광역시 서구 평리동 <br>
+                            &nbsp;1186-3 MCN 빌딩
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="index__info--box-sub">
+                <div class="index__info--box-desc">
+                    <div class="index__info--box-desc-main">
+                        <h1># 전화상담</h1>
+                    </div>
+                    <div class="index__info--box-desc-detail">
+                        <p>
+                            &nbsp;디자이너 직통 <br>
+                            &nbsp;<strong>053)565 - 8691~2</strong>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="index__info--box-sub">
+                <div class="index__info--box-desc">
+                    <div class="index__info--box-desc-main">
+                        <h1># 카톡상담</h1>
+                    </div>
+                    <div class="index__info--box-desc-detail">
+                        <p>
+                            &nbsp;카카오톡 > 친구찾기 > ID 검색 <br>
+                            &nbsp;<strong>MCNCUSTOM</strong>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="index__info--box-sub">
+                <div class="index__info--box-desc">
+                    <div class="index__info--box-desc-main">
+                        <h1># 브랜드</h1>
+                    </div>
+                    <div class="index__info--box-desc-detail">
+                        <p>
+                            &nbsp;2006년 국내최초 <br>
+                            &nbsp;스포츠웨어 주문제작 브랜드
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- =========== indexInfo end =========== -->
+
+<!-- ========== footer ========= -->
+<div class="inner">
+    <footer id="footer">
+        <div class="footer__wrap">
+            <div class="footer__left--box">
+                <div class="footer__customer">
+                    <h6>customer center</h6>
+                    <h3>1566-8657</h3>
+                    <small>(내선 3번)</small>
+                </div>
+                <div class="mcn__open--time">
+                    <p>
+                        &nbsp;&nbsp;평일 오전 9시 ~ 오후6시 <br> &nbsp;&nbsp;점심오후 1시 ~ 오후2시 <br>
+                        &nbsp;&nbsp;(토 / 일 공휴일 휴무)
+                    </p>
+                    <p class="footer__left--blue-text">
+                        ※ 광고대행사 연락 금지 (고객상담 지연)
+                    </p>
+                </div>
+                <ul class="footer__left--box-law">
+                    <a href="/member/agreement.html">
+                        <li>
+                            이용약관
+                        </li>
+                    </a>
+                    <a href="/member/privacy.html">
+                        <li>
+                            개인정보취급방침
+                        </li>
+                    </a>
+                    <a href="/article/faq/3/2581/">
+                        <li>
+                            세탁 및 취급시 주의사항
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer__right--box">
+                <div class="footer__right--box-sns">
+                    <h6>sns</h6>
+                    <ul class="footer__right--box-sns-icon">
+                        <a href="https://www.facebook.com/mcncustom" target='_blank'>
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a href="https://blog.naver.com/mcncustom" target='_blank'>
+                            <li>
+                                B
+                            </li>
+                        </a>
+                        <a href="https://www.instagram.com/mcncustom/" target='_blank'>
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="mcn__other--site">
+                    <h6>mcn affiliates</h6>
+                    <ul class="footer__right--box-bar" >
+                        <a href="https://mcnsports.co.kr/" target='_blank'>
+                            <li>
+                                mcn sports
+                                <i class="fas fa-caret-right"></i>
+                            </li>
+                        </a>
+                        <a href="https://mecenat.co.kr/" target='_blank'>
+                            <li>
+                                mecenat
+                                <i class="fas fa-caret-right"></i>
+                            </li>
+                        </a>
+                        <a href="https://mcnfishing.com/" target='_blank'>
+                            <li>
+                                mcn fishing
+                                <i class="fas fa-caret-right"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div module="Layout_footer">
+                    <div class="footer__right--box-info">
+                        <span>company : {$company_name} </span> <span class="footer__pseudo--line">owner : {$president_name}</span> <br>
+                        <span>business license : {$company_regno}</span> <span class="footer__pseudo--line">통신판매업 신고 제 {$network_regno}</span> <span class="footer__information--check">{$biz_no_link}</span> <br/>
+                        <span>tel : {$phone}</span> <span class="footer__pseudo--line">fax : {$fax}</span> <span class="footer__pseudo--line">address : {$mall_addr1} {$mall_addr2}</span><br/>
+                        <span class="{$cpo_email|display}">cpo : <a href="mailto:{$cpo_email}" class="footer__text--transform"> {$cpo_name} ({$cpo_email})</a></span><br/>
+                        <p class="copyright">Copyright &copy; <strong>2006 {$mall_name}</strong>. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- ========== footer end ========= -->
+

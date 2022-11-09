@@ -1,0 +1,32 @@
+/* .topArea__statelogon { 
+    position:absolute; 
+    right:0; 
+    top:28px; 
+} */
+.topArea__statelogon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.topArea__statelogon a { 
+    font-family: Arial; 
+    color:#1e1e1e; 
+    font-size:1rem; 
+    text-transform:uppercase; 
+    text-decoration:none; 
+    display:inline-block; 
+    margin-left:25px; 
+}
+/* .topArea__statelogon .count { 
+    display:inline-block; 
+    min-width:24px; 
+    margin: 0 0 0 6px; 
+    padding:3px 4px 3px; 
+    font-size:13px; 
+    text-align:center; 
+    border:1px solid #000; 
+    border-radius:20px; 
+    box-sizing:border-box; 
+} */

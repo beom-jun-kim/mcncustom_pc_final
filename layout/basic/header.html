@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- js -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <div class="header__nav--inner">
+            <div class="header__main--logo" module="Layout_LogoTop">
+                <a href="/index.html"><img src="/web/img/custom_logo.jpg" alt="{$mall_name}"></a>
+            </div>
+            <div class="navigation__flex--box">
+                <div class="topArea__statelogon RW">
+                    <!--@css(/css/module/layout/statelogoff.css)-->
+                    <div module="Layout_statelogoff">
+                         <button type="button" class="menu btnSearch eSearch">
+                            <!-- @import(/svg/icon-search.html) -->
+                            <i class="xi-search xi-2x"></i>
+                        </button>
+                        <a href="/member/login.html"><i class="xi-cart-o xi-2x"></i><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                        <a href="/member/login.html"><i class="xi-user-o xi-2x"></i></a>
+                    </div>
+                    <div module="Layout_stateLogon">
+                        <button type="button" class="menu btnSearch eSearch">
+                            <!-- @import(/svg/icon-search.html) -->
+                            <i class="xi-search xi-2x"></i>
+                        </button>
+                        <a href="/order/basket.html"><i class="xi-cart-o xi-2x"></i><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                        <a href="/myshop/index.html"><i class="xi-user-o xi-2x"></i></a>
+                        <a href="{$action_logout}"><i class="xi-log-out xi-2x"></i></a>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <ul class="xans-element- xans-layout xans-layout-category">
+                          <!--@js(/js/module/layout/category.js)-->
+                        <li class="header__category--sub">
+                            <a href="/company-introduce.html" >회사소개</a>
+                            <ul class="sub-category">
+                                <li><a href="/company-introduce.html">회사소개</a></li>
+                                <li><a href="/Manufacturing-process.html">제작공정</a></li>
+                                <li><a href="/order-guide.html">주문안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__category--sub"><a href="/category/제작가능상품/51/">제작가능상품</a></li>
+                        <li class="header__category--sub"><a href="/category/포트폴리오/55/">포트폴리오</a></li>
+                        <li class="header__category--sub"><a href="/category/디자이너추천/372/">디자이너추천</a></li>
+                        <li class="header__category--sub"><a href="/board/free/list.html?board_no=6">견적문의</a></li>
+                        <li class="header__category--sub"><a href="/category/개인결제/45/">개인결제</a></li>
+                        <li class="header__category--sub"><a href="https://mcnsports.co.kr/" target='_blank'>mcn sports<i class="fas fa-arrow-circle-right"></i></a></li>
+                        <li class="header__category--sub"><a href="https://mecenat.co.kr/" target='_blank'>mecenat<i class="fas fa-arrow-circle-right"></i></a></li>
+                        <li class="header__category--sub"> <a href="https://mcnfishing.com/" target='_blank'>mcn fishing<i class="fas fa-arrow-circle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><hr class="layout" />
+
+
+
+
+
+
+

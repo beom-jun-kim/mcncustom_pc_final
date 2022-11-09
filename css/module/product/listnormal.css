@@ -1,0 +1,74 @@
+.xans-product-normalmenu .function { overflow:hidden; text-align:right; line-height:38px; }
+.xans-product-normalmenu .prdCount { float:left;}
+.xans-product-normalmenu .prdCount strong { margin-left:8px; color:#7d7d7d;}
+
+/* .xans-product-normalmenu { border-top:1px solid #e0e0e0;}
+.xans-product-normalmenu .function .btnCompare { display:inline-block; padding:0 12px; border-left:1px solid #d7d5d5;}
+.xans-product-normalmenu .function .btnCompare:hover { text-decoration:none; }
+.xans-product-normalmenu fieldset { margin:20px 0 0; padding:10px 16px; text-align:right; background:#fbf9fa;} */
+
+/* ======== product > list.html ========= */
+.portpolio__title--category {display: flex; justify-content: space-between; border-bottom: 1px solid #eee; font-size: 1.6rem; height: 67px; font-family: 'NanumSquare', sans-serif !important; margin-top: 100px;}
+/* .portpolio__title--clothes {padding: 1rem 2.5rem;} */
+.portpolio__title--portpolio {padding: 1rem 0;}
+
+.portpolio__title--clothes:nth-child(1),
+.portpolio__title--clothes:nth-child(2),
+.portpolio__title--clothes:nth-child(3),
+.portpolio__title--clothes:nth-child(4),
+.portpolio__title--clothes:nth-child(5),
+.portpolio__title--clothes:nth-child(6),
+.portpolio__title--clothes:nth-child(7),
+.portpolio__title--clothes:nth-child(8),
+.portpolio__title--clothes:nth-child(9),
+.portpolio__title--clothes:nth-child(10),
+.portpolio__title--clothes:nth-child(11),
+.portpolio__title--clothes:nth-child(12),
+.portpolio__title--clothes:nth-child(13),
+.portpolio__title--clothes:nth-child(14) {display: none;}
+
+.portpolio__title--category-right {display: flex;}
+
+.portpolio__title--clothes {width: 130px; cursor: pointer; transition: 100ms; font-size: 1.3rem; position: relative;}
+.portpolio__title--clothes a {width: 100%; height: 100%; position: absolute; left: 0; top: 0; line-height: 67px; text-align: center;}
+
+.portpolio__title--clothes:hover {border-bottom: 8px solid #000;}
+.portpolio__title--clothes.active {border-bottom: 8px solid #000;}
+.portpolio__title--arrow.active {display: none;}
+
+.product__normalpackage--inner {max-width: 1230px;margin: 0 auto; border-bottom: 1px solid #eee;  }
+.product__normalpackage--inner .sort,
+.prdCount {padding: 1rem .5rem; font-family: 'NanumSquareRound';}
+.prdCount {color: rgb(167, 167, 167); font-size: 12px;}
+.product__list--grid-sub {padding: 0.1rem; margin-bottom: 0.03rem;}
+
+.fontcolor_point,
+.sports-bras {color: #000; text-transform: uppercase; margin-right: 3px;}
+.product-item{position:relative;}
+.product-item .list__fade--out{position:absolute; z-index: 1; transition: opacity 400ms ease-in-out; top: 0;}
+.product-item .list__fade--out:hover {opacity:0;}
+.product-item-second .list__html--fade img {position: relative; top: -5px;} 
+
+/* ======== product > list.html end ========= */
+
+/********************* Mobile *********************/
+@media all and (max-width:767px) {
+    /* .xans-product-normalmenu {padding: 20px 16px 0;} */
+}
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-product-normalmenu { padding:30px 0 0; }
+    /* .product__normalpackage--inner .sort,
+    .prdCount {padding: 1rem 2rem;} */
+}
+
+/********************* Tablet *********************/
+@media all and (min-width:768px) and (max-width: 1024px){
+    .xans-product-normalpackage .product_area { margin:0 24px; }
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-product-normalmenu {padding:30px 0 0; }
+}
+

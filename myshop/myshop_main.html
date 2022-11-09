@@ -1,0 +1,55 @@
+<div id="myshopMain" module="myshop_main">
+    <!--@css(/css/module/myshop/main.css)-->
+
+    <ul class="order__my--shop">
+        <li class="order">
+            <span class="my__shop--icon-order"></span>
+            <a href="/myshop/order/list.html">주문조회</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="modify">
+            <span class="my__shop--icon-imformation"></span>
+            <a href="/member/modify.html">회원정보</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="wishlist">
+            <span class="my__shop--icon-product"></span>
+            <a href="/myshop/wish_list.html">관심상품 
+                <span class="count {$wish_count_display|display}">({$wish_count})</span>
+            </a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="board">
+            <span class="my__shop--icon-list"></span>
+            <a href="/myshop/board_list.html">게시물관리</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="address">
+            <span class="my__shop--icon-address"></span>
+            <a href="/myshop/addr/list.html">배송 주소록 관리</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="likeit {$myLike_display|display}">
+            <span class="my__shop--icon-like"></span>
+            <a href="{$myLike_href}">좋아요</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="deposits {$deposit_display|display}">
+            <span class="my__shop--icon-name"></span>
+            <a href="/myshop/deposits/historyList.html">{$deposit_name}</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="consult {$consult_display|display}">
+            <span class="my__shop--icon-consulting"></span>
+            <a href="/board/consult/list.html">1:1 맞춤상담</a>
+            <i class="xi-plus"></i>
+        </li>
+        <li class="coupon {$coupon_display|display}">
+            <span class="my__shop--icon-coupon"></span>
+            <a href="/myshop/coupon/coupon.html">쿠폰 
+                <span class="count {$coupon_count_display|display}">({$coupon_count})</span>
+            </a>
+            <i class="xi-plus"></i>
+        </li>
+    </ul>
+</div>

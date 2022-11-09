@@ -1,0 +1,12 @@
+.xans-myshop-wishlistitem { border-top:1px solid #000; }
+
+.xans-myshop-wishlist .shippingFee { position:relative; display:inline-block; text-align:left; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -170px; width:360px; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table th { width:40px; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table th,
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table td { padding:7px 10px 8px 10px; text-align:left; }
+
+.myshopArea {max-width: 1320px; margin: 0 auto; border-bottom: 1px solid #eee; padding-bottom: 50px;}
+.path-1 {visibility: hidden;}
+.xans-myshop-wishlist {margin-bottom: 30px;}
+.ec-base-paginate-search.typeList a.this {color:#fff; background:#000;}

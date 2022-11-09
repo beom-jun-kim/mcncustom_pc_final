@@ -1,0 +1,83 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/js/module/layout/category.js)-->
+
+<div module="product_normalpackage">
+    <div class="product__normalpackage--inner">
+        <!--@css(/css/module/product/listnormal.css)-->
+        <!--@js(/js/module/product/normalmenu.js)-->
+        <div module="product_normalmenu">
+            <!--
+                $compare_page = /product/compare.html
+            -->
+
+            <div class="portpolio__title--category" module="Product_menupackage">
+                <div class="path" module="product_headcategory" style="height: auto; display: block;">
+                    <ol>
+                        <li class="{$disp_cate_1|display} portpolio__title--portpolio"><a href="{$link_product_list_1}" style="font-size: 1.6rem; color: #000; font-family: 'NanumSquare',sans-serif !important;">{$name_1}</a></li>
+                        <li class="{$disp_cate_2|display} portpolio__title--portpolio"><a href="{$link_product_list_2}" style="font-size: 1.6rem; color: #000; font-family: 'NanumSquare',sans-serif !important; font-weight: 900; margin-left: 5px;">{$name_2}</a></li>
+                    </ol>
+                </div>
+                <ul id="portpolio__title--category" class="menuCategory portpolio__title--category-right">
+                    <li module="product_displaycategory" style="display:{$display};" class="chkli arrow_check {$selected} portpolio__title--clothes">
+                        <a href="/{$design_page_url}?{$param_cate_no}">{$category_name}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="function" id="{$listmenu_position}" >
+                <p class="prdCount"><b class="sports-bras" module="product_headcategory">{$title_text}</b> <span module="product_headcategory"></span> 카테고리에 <b class="fontcolor_point">{$total_count}</b>개의 상품</span></p>
+                <div class="sort">
+                    <select id="selArray" name="selArray" module="product_Orderby">
+                        <option value="{$param}">{$sort_name}</option>
+                        <option value="{$param}">{$sort_name}</option>
+                    </select>
+                </div>
+                <span class="compare {$product_compare_display|display}"><a href="#none" class="btnCompare" onclick="{$product_compare_action}">상품비교</a></span>
+            </div>
+        </div>
+        <div module="product_listnormal" style="display: inline-block;">
+            <!--
+                $count = 9
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $cache = no
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+            -->
+            <ul class="prdList column4 product-item">
+                <li class="product__list--grid" id="anchorBoxId_{$product_no}">
+                    <div class="product__list--grid-sub">
+                        <!-- <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" onmouseover="this.src='{$image_small}'"onmouseout="this.src='{$image_medium}'"  title="{$product_name|striptag}" alt=""></a> -->
+                        <a href="/product/detail.html{$param}" class="list__fade--out"><img src="{$image_medium}"  class="product-img" title="{$product_name|striptag}" alt="" /></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="prdList column4 product-item-second">
+                <li class="product__list--grid" id="anchorBoxId_{$product_no}">
+                    <div class="product__list--grid-sub">
+                        <a href="/product/detail.html{$param}" class="list__html--fade"><img src="{$image_small}"  class="product-img" title="{$product_name|striptag}" alt="" /></a>
+                    </div>
+                </li>
+            </ul>            
+        </div>
+        <div module="product_normalpaging" class="ec-base-paginate prd_paginate bike__clothes--more">
+            <a href="{$param_first}" class="first"><img src="/web/img/btn_page_first.png" alt="첫 페이지" /></a>
+            <a href="{$param_before}"><img src="/web/img/btn_page_prev.png" alt="이전 페이지" /></a>
+            <ol class="paginate__number">
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <a href="{$param_next}"><img src="/web/img/btn_page_next.png" alt="다음 페이지" /></a>
+            <a href="{$param_last}" class="last"><img src="/web/img/btn_page_last.png" alt="마지막 페이지" /></a>
+        </div>
+    </div>
+</div>
+
+

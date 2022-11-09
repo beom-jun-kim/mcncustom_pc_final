@@ -1,0 +1,73 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path-1" style="visibility: hidden;">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>상품검색</strong></li>
+    </ol>
+</div>
+
+<div class="titleArea" style="margin-top: 100px;">
+    <h2>상품검색</h2>
+</div>
+
+<div class="product__normalpackage--inner" style="max-width: 1230px;margin: 0 auto; border-bottom: 1px solid #eee;">
+    <!--@import(/product/shoppQ/searchForm_typeTop.html)-->
+    <div class="gInnerMargin" style="max-width: 1300px; margin: 0 auto;">
+        <div module="Search_Result" class="ec-base-product">
+            <!--
+                $count = 9
+            -->
+            <ul class="prdList column4 search_html-list">
+                <li id="anchorBoxId_{$product_no}" class="search__html--li">
+                    <div class="prdList__item">
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" title="{$product_name|striptag}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                        </div>
+                    </div>
+                </li>
+                <li id="anchorBoxId_{$product_no}" class="search__html--li">
+                    <div class="prdList__item">
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" title="{$product_name|striptag}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div module="search_paging" class="ec-base-paginate-search typeList search__html--paginate-margin bike__clothes--more">
+        <a href="{$param_first}" class="first"><img src="/web/img/btn_page_first.png" alt="첫 페이지" /></a>
+        <a href="{$param_before}"><img src="/web/img/btn_page_prev.png" alt="이전 페이지" /></a>
+        <ol class="paginate__number">
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        </ol>
+        <a href="{$param_next}"><img src="/web/img/btn_page_next.png" alt="다음 페이지" /></a>
+        <a href="{$param_last}" class="last"><img src="/web/img/btn_page_last.png" alt="마지막 페이지" /></a>
+    </div>
+</div>
+
+<script>
+    // 스크롤 헤더 이벤트
+    var $SecondHeader = $('.topArea');
+
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        var SecondHeaderHeight = $('#topBanner').outerHeight();    
+        
+        if( scrollTop >= SecondHeaderHeight ){
+            $SecondHeader.addClass('fixed');
+        }else{
+            $SecondHeader.removeClass('fixed');
+        }
+    });
+</script>

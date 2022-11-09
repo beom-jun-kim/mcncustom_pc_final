@@ -1,0 +1,70 @@
+.community_category .category_list {display: flex;}
+.community_category .category_item {flex-grow: 1; line-height: 45px; border: 1px solid #999; border-right-width: 0;}
+.community_category .category_item:last-of-type {border-right-width: 1px;}
+.community_category .category_item a {display: inline-block; width: 100%; height: 100%; color: #353535; font-size: 15px; text-align: center;}
+.community_category .category_item.active a,
+.community_category .category_item a:hover {color: #fff; background-color: #353535;}
+.community_category .category_item.active {color: #fff; background-color: #353535;}
+
+.xans-board-readpackage-4,
+.xans-board-commentpackage-4,
+.xans-board-movement-4,
+.xans-board-function-4,  
+.xans-board-read-1002,
+.xans-board-function-1002,
+.xans-board-readpackage-1002,
+.xans-board-movement-1002 {max-width: 1320px; margin: 0 auto;}
+
+.read__html--head {display: flex;}
+.read__read--password {margin-top: 20px;}
+.read__read--password span {padding:1px 0 1px 22px;}
+.read__html--table .head .description .name a { font-size: 13px;}
+.read__html--mileage {position: relative; top: -5px; left: -5px;}
+.read__gBreak--flex-box {padding: 2rem 0; /* font-family: 'NanumSquare',sans-serif !important; */}
+.adminAnswer {order: 2; transform: translate(5px, 5px);}
+.line-box {height: .5px; max-width: 1320px; margin: 0 auto; background: #eee; margin-top: 50px;}
+
+/* .gBreak a {font-size: 1.2rem;} */
+.gLeft {border: 1px solid rgb(216, 216, 216); padding: 1rem 3rem;}
+.gRight {line-height: 60px;}
+.gRight a {border: 1px solid rgb(216, 216, 216); padding: 1rem;}
+.read__html--movement {border: 1px solid rgb(216, 216, 216);}
+.read__html--movement i {margin-right: 15px; transform: translateY(2px);}
+/* .read__html--movement-box {font-size: 1.2rem; font-family: 'NanumSquare',sans-serif !important;} */
+.xans-board-title p.imgArea { margin:0 0 20px;}
+.description__attach--flex {display: flex;}
+
+.path-1 {visibility: hidden;}
+
+.ec-base-box + #BoardDelForm .ec-base-table { border-top: 0; }
+.xans-board-read .ec-base-table .head { padding: 50px 0 15px 0;}
+.xans-board-read .ec-base-table .head h3 {font-size: 1.5rem; font-family: 'NanumSquare',sans-serif !important; font-weight: 800; }
+.xans-board-read .ec-base-table .description {margin: 15px 0 0; }
+.xans-board-read .ec-base-table .description .name { display: inline-block; margin-right: 8px; font-size: 1.3rem;}
+.xans-board-read .ec-base-table .etcArea {display: inline-block; }
+.xans-board-read .ec-base-table .etcArea li { display:inline-block; margin-right: 10px; /* vertical-align:middle; */ color:#6d6d6d; }
+.xans-board-read .ec-base-table .etcArea li a { text-decoration:none; }
+.xans-board-read .ec-base-table .etcArea .txtNum { font-size: 13px; color: #6d6d6d; }
+.xans-board-read .ec-base-table .detail { padding:30px 20px; word-break:break-all; line-height:normal; border:1px solid #eaeaea; border-right: none; border-left: none;}
+.xans-board-read .ec-base-table .detail ol,
+.xans-board-read .ec-base-table .detail ul { margin:15px 0; padding:0 0 0 40px; }
+.xans-board-read .ec-base-table .detail ol li { list-style:decimal; }
+.xans-board-read .ec-base-table .detail ul li { list-style:disc; }
+.xans-board-read .ec-base-table .detail img { max-width: 100%; }
+.xans-board-read .ec-base-table .attach { position: relative; padding: 20px 0; margin: 0 20px; text-align: right;}
+.xans-board-read .ec-base-table .attach a { padding:0 0 0 12px; color:#6d6d6d; }
+.xans-board-read .ec-base-table .attach a:hover { text-decoration:underline; }
+.xans-board-read .ec-base-table .attach a:first-child { padding-left: 20px; background: url("//img.echosting.cafe24.com/skin/skin/board/icon-file.svg") no-repeat 0 0; background-size: 14px auto; }
+.xans-board-read .ec-base-table .description .name img {position: relative; top: 4px; margin-right: 5px; transform: scale(1.5);}
+.xans-board-read .ec-base-table .description .name {-ms-transform: translateY(-7px);}
+
+.xans-board-product .ec-base-box.typeProduct { margin:0 0 40px; }
+.xans-board-product .information h3 { margin:0 0 2px; padding:0 120px 0 0; font-size:14px; }
+.xans-board-product #sPrdCommonImg { position:absolute; top:0; right:0; width:100px; text-align:right; }
+.xans-board-product .information .button { margin:15px 0 0; }
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    /* .xans-board-read .ec-base-table .head { padding: 20px 16px; } */
+    .xans-board-read .ec-base-table .attach {margin: 0 16px;}
+}

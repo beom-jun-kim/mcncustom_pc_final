@@ -1,0 +1,12 @@
+.xans-board-function {margin-top: 30px; padding: 1rem 0; border: 1px solid rgb(216, 216, 216); display: flex; align-items: center; /* font-family: 'NanumSquare',sans-serif !important; */}
+.xans-board-function #boardGroup { margin:0 5px; }
+.xans-board-function .gColumn { display:flex; align-items: center; /* font-size: 1.2rem; */}
+.gColumn__text--move {padding-left: 1rem; letter-spacing: -1px;}
+.xans-board-function span:nth-child(2) {margin-right: 1rem;}
+.xans-board-function span:last-child {padding-left: 1.5rem;}
+.xans-board-listsgroup + form > .xans-board-function { padding-top:0; border-top:0; }
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-board-function .gColumn:first-of-type { margin-left:0; }
+}
